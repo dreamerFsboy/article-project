@@ -14,7 +14,7 @@ const text = shallowRef('')
 let realtime
 const Connect = () => {
   console.log(text.value)
-  fetch('/api/auth?id='+text).then(res => {
+  fetch('/api/auth?id='+text).then(res => res.json()).then(res => {
     console.log(res)
     // realtime = new Ably.Realtime({
     //   authUrl: '/api/auth',
