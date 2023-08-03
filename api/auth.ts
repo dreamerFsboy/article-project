@@ -3,8 +3,9 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 export default async function handler(req:VercelRequest, res:VercelResponse) {
   // const client = new Ably.Realtime(process.env.ABLY_API_KEY as string);
   const client = new Ably.Realtime('b5_GaA.9d4a0Q:ni423V7pOJCKSTPuUV3eTFTnWyv-s2gBHNWX6qT2HXM');
+  console.log(req.body['clientId'])
   const tokenRequestData = await client.auth.createTokenRequest({
-    clientId: (Math.random()*1000000).toFixed(0)
+    clientId: req.body['clientId']
   });
   res.status(200).json(tokenRequestData);
 }

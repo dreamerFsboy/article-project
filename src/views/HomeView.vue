@@ -15,7 +15,16 @@ let realtime: Ably.Realtime
 let channel: Ably.Types.RealtimeChannelCallbacks
 const Connect = () => {
   console.log(text.value);
-  (!realtime)&&fetch('/api/auth?id='+text.value).then(res => res.json()).then(res => {
+  (!realtime)&&fetch('/api/auth',
+  {
+    method: 'post',
+    body: JSON.stringify({
+      clientId:text.value
+    }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  }).then(res => res.json()).then(res => {
     console.log(res)
     realtime = new Ably.Realtime({
       authUrl: '/api/auth',
