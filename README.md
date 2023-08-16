@@ -33,3 +33,11 @@
 /admin/dashboard                管理员主面板
 /admin/addUser                  管理面板之添加用户
 /admin/addAdmin                 管理面板之创建临时管理账号
+
+# 接口设计
+
+用户端
+登陆
+刷新登陆状态?
+登出
+

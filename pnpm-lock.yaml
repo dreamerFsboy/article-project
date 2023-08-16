@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@auth0/auth0-vue':
+    specifier: ^2.3.0
+    version: registry.npmmirror.com/@auth0/auth0-vue@2.3.0(vue-router@4.2.4)
   '@types/qs':
     specifier: ^6.9.7
     version: registry.npmmirror.com/@types/qs@6.9.7
@@ -63,6 +66,28 @@ packages:
     version: 0.4.0
     dependencies:
       bops: registry.npmmirror.com/bops@1.0.1
+    dev: false
+
+  registry.npmmirror.com/@auth0/auth0-spa-js@2.1.1:
+    resolution: {integrity: sha512-21qEf5Bjouy76CWd1gQgf/tT6iD513YFYaK0+3OF1nbwLtPFpxm5Ln94M7SCVFKfe5jbchWuEcIb1HLer3r6RA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@auth0/auth0-spa-js/-/auth0-spa-js-2.1.1.tgz}
+    name: '@auth0/auth0-spa-js'
+    version: 2.1.1
+    dev: false
+
+  registry.npmmirror.com/@auth0/auth0-vue@2.3.0(vue-router@4.2.4):
+    resolution: {integrity: sha512-qg+Cmoem/MOpXfR4cdBdvvqukzzjh3mIO7hcBlmjJdjORiSKvHhCmgO4FVx0IVeFPpI4RLGvD1uR7DWT31h1bg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@auth0/auth0-vue/-/auth0-vue-2.3.0.tgz}
+    id: registry.npmmirror.com/@auth0/auth0-vue/2.3.0
+    name: '@auth0/auth0-vue'
+    version: 2.3.0
+    peerDependencies:
+      vue-router: ^4.0.12
+    peerDependenciesMeta:
+      vue-router:
+        optional: true
+    dependencies:
+      '@auth0/auth0-spa-js': registry.npmmirror.com/@auth0/auth0-spa-js@2.1.1
+      vue: registry.npmmirror.com/vue@3.3.4
+      vue-router: registry.npmmirror.com/vue-router@4.2.4(vue@3.3.4)
     dev: false
 
   registry.npmmirror.com/@babel/helper-string-parser@7.22.5:
